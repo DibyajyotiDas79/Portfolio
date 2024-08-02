@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <title>
+            Dibyajyoti Portfolio Website
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!---Google Fonts----->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label = "toggle navigation" tabindex="-1">
+               <span class="hamburger"></span> 
+            </button>
+            <nav class="nav">
+                <ul class ="nav__list">
+                    <li class ="nv__item"><a href="#home"class="nav__link">Home</a></li>
+                    <li class ="nv__item"><a href="#skill"class="nav__link">My Skills</a></li>
+                    <li class ="nv__item"><a href="#about"class="nav__link">About Me</a></li>
+                    <li class ="nv__item"><a href="#work"class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-----Introduction Page-->
+        <section class="intro" id="home">
+            <h1 class ="section__title section_title--intro">
+                Hi, I am <strong>Dibyajyoti</strong>
+            </h1>
+            <p class ="section__subtitle section__subtitle--intro">MULTIMEDIA SPECIALIST</p>
+            <img src="./happy.png"alt="a picture of Dibyajyoti"class="intro__img">
+        </section>
+
+        <!---My Skill Set page-->
+        <section class="my-skill" id="skill">
+            <h2 class="section__title section__title--services"><strong>MY SKILLS</strong></h2>
+            <div class="skill-container">
+            <div class="skill"> 
+                <h3>UI/UX Design</h3>
+                <p>I specialize in designing user interfaces that are both simple 
+                    and intuitive, ensuring that the customer experience remains a top priority. 
+                    My approach focuses on creating clean, user-friendly designs that facilitate easy 
+                    navigation and enhance usability.</p>
+            </div> <!---1-->
+
+            <div class="skill">
+                <h3>Data Analysis</h3>
+                <p>I have proficiency in using Python, along with libraries such as Pandas and NumPy, to 
+                    analyze data effectively.Together, these tools enable me to conduct comprehensive data 
+                    analyses, generate insights, and support data-driven decision-making.</p>
+            </div> <!----2-->
+
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>I specialize in using HTML, CSS, and JavaScript to create responsive web designs. My expertise 
+                    in HTML allows me to structure web content effectively, ensuring that it is both semantically 
+                    correct and accessible. With CSS, I design visually appealing and responsive layouts that adapt 
+                    seamlessly to various screen sizes and devices, enhancing the user experience across different 
+                    platforms.
+                </p>
+            </div><!-----3-->
+            </div>
+            <button class="btn"><a href="https://www.linkedin.com/in/dibyajyoti-das-0ba91b215/"target="blank">Linkedin Profile</a></button> 
+        </section>
+
+        <!---About me---->
+        <section class="about-me" id="about">
+            <h2 class = "section__title section__title--about"><strong>WHO AM I?</strong></h2>
+            <p class="section__subtitle section__subtitle--about">Designer and Data Analyst</p>
+            <div class="about-me__body">
+                <p>Hi, I'm Dibyajyoti Das! With a background in civil engineering, I transitioned into the dynamic world of 
+                    finance, managing retail operations at Federal Bank. My passion for technology and data analysis led me 
+                    to master SQL and Python, enabling me to uncover valuable insights from complex datasets. </p>
+                <p>Now, as a Management Trainee at Mediafinity, I combine my analytical skills with my creative flair to design 
+                    unique, user-friendly UIs in Figma. My journey is a blend of precision, innovation, and a relentless drive 
+                    to make data-driven decisions that enhance user experiences.</p>
+            </div>
+            <img src="./who I am (2).jpg" alt="a picture of me"class="about-me__img">
+        </section>
+
+        <!---My Work--->
+        <section class = "my-work" id="work">
+            <h2 class="section__title section__title--work"><strong>MY WORK</strong></h2>
+            <div class="portfolio">
+                <!--Portfolio 01-->
+                <p class="portfolio--description">Bike Sharing Data Analysis
+                <a href="https://rpubs.com/dasd7959/938439" target="blank" class="portfolio__item">
+                    <img src="./porfolio-data-1.jpg" alt="" class="portfolio__img">
+                </a>
+                </p>
+                <!---Portfolio 02-->
+                <p class="portfolio--description">Bellabeat Data Analytics Project
+                <a href="https://rpubs.com/dasd7959/938418" target="blank" class="portfolio__item">
+                    <img src="./portfolio-data-2.jpg" alt="" class="portfolio__img">
+                </a>
+                </p>
+                <!--Portfolio 03-->
+                <p class="portfolio--description">Portfolio Website
+                <a href="" class="portfolio__item">
+                    <img src="./website portfolio.jpg" alt="" class="portfolio__img">
+                </a>
+                </p>
+                </section>
+            </div>
+        </section>
+
+        <!----footer-->
+        <footer>
+            <ul class="social-list"></ul>
+                <li class="social-list__item"><i class="fa-regular fa-envelope"><a href="mailto:dasd7959@gmail.com" class="footer-link" target="blank"></a></i></li>
+                <li class="social-list__item"><i class="fa-brands fa-linkedin-in"><a class="social-list__link"href = "https://www.linkedin.com/in/dibyajyoti-das-0ba91b215/"target="blank"></a></i></li>
+                <li class="social-list__item"><i class="fa-brands fa-github"><a class="social-list__link"href = "https://github.com/dasd7959"></a></i></li>
+            </ul>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>
